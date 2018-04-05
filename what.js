@@ -3,7 +3,7 @@ What.display = function(text, options, offset) {
 	if (text != null && offset != null && offset >= 0) {
 		offset *= options.scrollamount != null ? Math.abs(options.scrollamount) : 1;
 		offset %= text.length;
-		if (options.direction == null || options.direction == "right")
+		if (options.direction == "right")
 			offset = text.length - offset;
 		
 		var start = text.substring(0, offset).split(" ").join("_");

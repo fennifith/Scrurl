@@ -66,7 +66,7 @@
 
 		<script type="text/javascript" src="scrurl.js"></script>
 		<script>
-			Scrurl.display("this is a thing that does stuff", {
+			Scrurl.display(document.location.search && document.location.search.startsWith("?@") ? document.location.search.substring(2) : "this is a thing that does stuff", {
 				"scrolldelay": 200,
 				"scrollamount": 1,
 				"direction": "left"

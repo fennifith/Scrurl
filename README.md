@@ -28,3 +28,7 @@ This will stop the url from scrolling, but will not remove it from the address b
 ```javascript
 Scrurl.display(null);
 ```
+
+### Sample Implementations
+
+- [./examples/focusable.html](Preventing Scrurl from interfering with address bar input.)

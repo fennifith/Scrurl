@@ -31,4 +31,4 @@ Scrurl.display(null);
 
 ### Sample Implementations
 
-- [./examples/focusable.html](Preventing Scrurl from interfering with address bar input.)
+- [Preventing Scrurl from interfering with address bar input.](./examples/focusable.html#L62)

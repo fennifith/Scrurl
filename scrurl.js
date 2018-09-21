@@ -6,9 +6,9 @@ Scrurl.display = function(text, options, offset) {
 		if (options.direction == "right")
 			offset = text.length - offset;
 		
-		var start = text.substring(0, offset).split(" ").join("_");
-		var end = text.substring(offset, text.length).split(" ").join("_");
-		window.history.replaceState({}, "", "?" + end + "_" + start);
+		Scrurl.start = text.substring(0, offset).split(" ").join("_");
+		Scrurl.end = text.substring(offset, text.length).split(" ").join("_");
+		window.history.replaceState({}, "", "?" + Scrurl.end + "_" + Scrurl.start);
 	} else if (text != null) {
 		Scrurl.interval = setInterval(function() {
 			if (Scrurl.offset != null)
